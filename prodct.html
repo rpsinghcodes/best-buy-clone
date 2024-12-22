@@ -1,14 +1,1300 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.0/dist/css/splide.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    
+    <hr class="border border-gray-200 mt-24" />
+    <nav class="font-sans text-sm mt-10 ml-10">
+        <ul class="flex space-x-2">
+            <li><a href="#" class="text-blue-500 hover:underline">Best Buy</a></li>
+            <li><i class="fa-solid fa-caret-right text-black"></i></li>
+            <li>
+                <a href="#" class="text-blue-500 hover:underline">Video Games</a>
+            </li>
+            <li><i class="fa-solid fa-caret-right text-black"></i></li>
+            <li>
+                <a href="#" class="text-blue-500 hover:underline">Video Game Accessories</a>
+            </li>
+            <li><i class="fa-solid fa-caret-right text-black"></i></li>
+            <li>
+                <a href="#" class="text-blue-500 hover:underline">Gaming Controllers</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <!-- Left Section -->
+        <div>
+            <div class="flex flex-col mt-14 gap-3 ml-12">
+                <img class="thumbnail w-20 h-20 border-2 border-gray-200 p-2 rounded-lg hover:border-black"
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464307_sd.jpg"
+                    alt="Controller Thumbnail 1" />
+                <img class="thumbnail w-20 h-20 border-2 border-gray-200 p-2 rounded-lg hover:border-black"
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464307_rd.jpg"
+                    alt="Controller Thumbnail 2" />
+                <img class="thumbnail w-20 h-20 border-2 border-gray-200 p-2 rounded-lg hover:border-black"
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464307ld.jpg;maxHeight=120;maxWidth=120;format=webp"
+                    alt="thumbnail3" />
+                <img class="thumbnail w-20 h-20 border-2 border-gray-200 p-2 rounded-lg hover:border-black"
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464307_bd.jpg;maxHeight=120;maxWidth=120;format=webp"
+                    alt="thumbnail4" />
+                <img class="thumbnail w-20 h-20 border-2 border-gray-200 p-2 rounded-lg hover:border-black"
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464307cv11d.jpg;maxHeight=120;maxWidth=120;format=webp"
+                    alt="thumbnail5" />
+                <img class="thumbnail w-20 h-20 border-2 border-gray-200 p-2 rounded-lg hover:border-black"
+                    src="https://pisces.bbystatic.com/prescaled/540/960/image2/BestBuy_US/images/videos/1249772612.jpg;maxHeight=120;maxWidth=120;format=webp"
+                    alt="thumbnail6" />
+                <img class="thumbnail w-20 h-20 border-2 border-gray-200 p-2 rounded-lg hover:border-black"
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/ugc/photos/thumbnail/26174928fe7a55da82535eeada6af69a.jpg;maxHeight=120;maxWidth=120;format=webp"
+                    alt="thumbnail7" />
+            </div>
+        </div>
+        <!-- Middle Section -->
+        <div>
+            <div class="flex justify-center items-center">
+                <img id="main-image"
+                    src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464307_sd.jpg"
+                    alt="Main Product" class="max-w-full mt-56 mr-72" />
+            </div>
+        </div>
+        <!-- Right Section -->
+        <div>
+            <a class="text-blue-500 hover:underline text-sm" href="#">Sony</a>
+            <h1 class="font-medium text-xl lg:text-2xl leading-tight mt-2">
+                Sony - PlayStation 5 - DualSense <br />
+                Wireless Controller - Midnight <br />
+                Black
+            </h1>
+            <p class="mt-2 text-sm">Model: 1000039936/3006392 SKU: 6464307</p>
+            <p class="mt-0 text-sm">Release Date: 06/18/2021</p>
+
+            <div class="flex items-center mt-4">
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <span class="ml-2 text-blue-500 font-semibold text-sm">4.8</span>
+                <span class="text-blue-500 font-normal text-sm">(37,912 Reviews)</span>
+            </div>
+            <!-- price div -->
+            <div class="mt-6 grid grid-cols-3 gap-0">
+                <p class="font-bold text-2xl">$74.99</p>
+                <p>
+                    4 payments starting at <br />
+                    <span class="font-bold text-2xl">$18.75</span> <br />
+                    <span>with
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXEAAACJCAMAAADt7/hWAAAApVBMVEX///8AAACqj//v7++5ubmliP+ulP/m3v/59/+IiIg4ODhoaGini//g4ODd3d2UlJSampr29vakh/+qqqr5+fnBwcGioqKxsbHQ0NDt7e16enoqKirIyMiAgID8+/9PT09wcHBFRUVeXl7Brv/x7f8XFxchISEREREzMzPq5P+4ov+0nP++qv+NjY1YWFjFs//Ux//w6//c0f/PwP/Zzv/MvP/i2f/jWFO3AAAIBUlEQVR4nO2diULiMBCGLeLFpWXxAFEoCqgr7uXu+z/aqrurmbbJZEryhy35HsBJx9J+SSbTnZ3NYtgdhh7CFnE6midvPJ11Q49lGzhJVCanocdTdy4ukxyTi9BjqjXn+Xy/chJ6VDWmNOFJ0k5DD6yuXJQn/OXJElPuhcGdLuPJJPTY6smZNuFJMgo9uDqSFjRFJVqie05NCU+S0MOrIVNzxo9Dj69+ZOaMJ4PQA6wbwwWT8WboEdaNLpPw5Cn0COsGm/F5nAa5hc14Epe03MI+x6OSuybjMv4p9AjrBuPjcdXWOc14j4PZncfnOJgRk/HoKq5h/HAep/nOuTJmfBZ6eDVksDRlfBx6eHVEu9H5Qiv04OrJJ33G43vTDye6hB+FHllt0dzl8bXpj2Id3AvT0KOqNelRIeFnocdUd7pXRBNHsabZP2nzKnvL9qJ9Fkv3UaTpME3jzD4SiUQikUgkDLtgSPBDMCR46vKyBELb0i+UeoGsvt409pE0DtTgbNmGPcvl4i5rj1ZNmyPXbXdxrSA78z87DSR7z2rw4jqOA+ZPR2Mm68c+4hog1SdfsRnv/FCDG7ZB1mM5a5qSbjr35IMrNfivPWzGb9Tgpr2+dZlP9XtXbEmUY0g5+D044w9qcL6qdy0mui3xnt+4BchO8WEfmvHG52sl+ND3pU56pRkf+I6bY6Fa1CE24Y191Q9T/cldV1zls/2G97A51H2G68/gV+c39cqf/F/svOxxHlTIH8F6SIQcIsYlpyPRQk5eKF/AGf+uBvci5AWK5QgrSNwPtkDIKa380bGgQv4drIdf1OA+hVzlLpdytJCTXxlYyBtEyGFi3KKrXGghz9Tgt+CMEyHvGmt6XUJPAaeosH+5JEK+j804Wsj/QR6l6CnQkgo5NuOdW/XSJ7irJt0F0EJO5r6P2Izv3avBZ7iLXqqriWghJ1OgoEJuPg7jlrYSFzMR+IAI+Y+QQg4VY2UrRlst7wlShB9UyMfIy1YUES3k6u8LLuSPanDUFOgPH79ttJCTJoZgIe9QIYde98dNvguNm5v0hhVyY+M/57wbInoKREQJLeR7RMgz6IW/zzwHQYX8AZvxPhFywJ6EyvvcL6iQ34QUcq4Jg2PeO8UgJwIvzEglHFrIv6rBeSEfdym9MsYnbbb31CvvzoAtEso1qHkGZ5wIOdPBNck9AQ3sntos0vy71zQN172Q5S/hAKyHQiEX9GGwSOM/W+ktWnKqJXxVGOc38D0uFHLJkVJ+YrPWmfesQr7LagnCCjn7+BU1QGdTnvF/Q0+Flc5pWYk1XMhJETm7J9EuGbIe9k28TsblgqPpMPaAfaxQIWdfd8LvKnAP23WOBUuLLp507WfRRUK/1OCskF/uaoZdDleQUb2vXSo9YKBvWgiu2pcKuaw5ALdiUrl349hK+D8oOKECWsh/qsF5IRe2Y2DWDSr2Jx1InyhFJ1Soj5C/wmyoVftGQy+T5fvS3OoKLuRqcLdCvsNuqFX62o50c3DEHLu7hSb8BXUKZG7890p5CXjV7Mhk842hcIFzyX4GAj0F6hMhZ19IU1l+mHtcnvFzYeHYzEJAwVX7fVK1n3FXIBRyZpoizbhDJ1QIKuTsFV3KPmOROc242AntzGrDhVw0TeTexLI3p3Reb2tC6Kp9IuR86YhIyLk5rMQOe8JC1KV1+9Ogx2j5IiGJkLN6L3BNaeGW4OdzXxsh5//Yue2fGmbChEtWbOBCTqKzl2K/i2BRVGf7w5duy81E7/drtJCrU6AdVndtf60XNjsGdk1YUml1hbT5KXhPggo5u33YOilwnGd1ZLdBs7DKx5j7lkkOSydUQFfty4TcJTa/l4G0urzC6hi4ar9D+tpAa7ktZoQXwj37VpWW+EGP0SJLRyxmU9Ib4KrSlx03XMjdwW7ld4VnwZYVd/E2XMjdwe0ASY+tz2SbsB9suJC7w/xQSaUFKdbTqQLX4IRTIfeS21KmxixIH2+tdSox0FMgIuS4g8tGq5AWVq/3VXtw1X6AvjavmNbGe8JJz6Vtza8GtJCTqn2YkBuSJK0nr7RBrbINfW0MJSRSJ3TwydKgQs4XCTmhpV3EqvAvX/tDyNsg5LrX5rDKe0RY0lHkFpvxRodEd57cMnTu3BS+Mv/QWh3JUcNegzOOF3KNyw2Qh+3IYw0t5OQYLUDINW/N0m/ZeYMeo613o0nNiw7ciJxUxwXta+P9wjWFgOi+NmRrrs5Crp0eohtNkndJ0L42foVcXwoAmgi8E7KvTQfWaFLTgvwNbD+dJLlTg6MbTYJWyCfG1UJsP50kd7QR3Gu/gxDyEbe+B2sp+hcSHJvwXKNJD/1lFm2LxSZsB6OwQt4hx2jdCvkim57bVTQAW4q+QW4CdF8bUiTEH91r2zAdrc5OL3r2u73gfjr/VaNJ6ySK2F4h56v2q9Q98QRtNIk+RisUcvbAXiWgLUWTvJCD9XBfDc63H5RWC9sRVMivwRmnx2jZoa7V+0cPIMkEEhyc8IZMyOlXCZyBngKROvPNFnK7Snsxmf8kEzZHyPmVaj8Zh54WSHKbrUEbTfJFQpWqtFnQQk72oqKQAwgp5NJPMdVDyMm3UYMKOd+BvXJ/KyNbJeS00SSraVHI10cVcr4DuychR2RZ5T9aIfck5Ohe+6SrQ1Ah5xuZ+Mk4WsiJAAQVcr5IqOqpMjPoTzGRFfLn/h6SPhFy/hitHyHvNrGQqzg8wEKe47vsWNc5WBYJym8yvv7fzBUzxQAAAABJRU5ErkJggg=="
+                            alt="zipLog" class="w-8 h-8" />
+                    </span>
+                    <a class="text-sm text-blue-700 underline font-semibold" href="#">Learn more ></a>
+                </p>
+                <!-- <p class="font-bold text-2xl">$18.75</p> -->
+                <div>
+                    <i
+                        class="fa-regular fa-bell ml-10 mt-6 p-4 border-2 border-gray-200 rounded-full hover:border-gray-950"></i>
+                </div>
+            </div>
+
+            <!-- trade n save div -->
+            <div>
+                <p class="mt-2 mb-2 text-sm font-medium text-gray-700">
+                    Trade-In and Save
+                </p>
+                <!-- logo svg -->
+                <div class="flex justify-center text-center w-auto mr-2 h-16 border-2 border-gray-400 rounded-md">
+                    <svg class="mr-10" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 24 24"
+                        aria-hidden="true" role="img" width="40px">
+                        <path
+                            d="M2.39 15.29c-.33 0-.64-.22-.73-.56-.23-.88-.34-1.79-.34-2.7 0-2.85 1.11-5.53 3.12-7.56 2.03-2.04 4.72-3.16 7.59-3.16 2.47 0 4.88.86 6.78 2.42.32.26.37.73.1 1.06-.26.32-.74.37-1.06.1a9.24 9.24 0 0 0-5.83-2.08c-2.47 0-4.79.96-6.53 2.71a9.16 9.16 0 0 0-2.68 6.5c0 .79.1 1.57.3 2.33.1.4-.14.81-.54.91q-.09.03-.18.03">
+                        </path>
+                        <path
+                            d="M18.67 5.38h-2.64c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h1.89v-1.9c0-.41.34-.75.75-.75s.75.34.75.75v2.64c0 .42-.34.76-.75.76m-5.42 6.12h-3.5c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h3.5c.41 0 .75.34.75.75s-.34.75-.75.75">
+                        </path>
+                        <path
+                            d="M16.75 16.5H6.25c-.41 0-.75-.34-.75-.75v-7.5c0-.41.34-.75.75-.75h10.5c.41 0 .75.34.75.75v7.5c0 .41-.34.75-.75.75M7 15h9V9H7zm5.02 7.71c-3.12 0-6.09-1.36-8.13-3.73-.27-.31-.23-.79.08-1.06s.79-.23 1.06.08a9.2 9.2 0 0 0 6.99 3.21c2.47 0 4.79-.96 6.53-2.71.29-.29.77-.29 1.06 0s.29.77 0 1.06a10.64 10.64 0 0 1-7.59 3.15m10.55-9.78c0-1.03-.82-1.37-1.7-1.58-1.03-.24-1.14-.41-1.14-.72s.3-.51.74-.51c.37 0 .73.12 1.12.37a.512.512 0 0 0 .79-.43.49.49 0 0 0-.24-.43c-.28-.18-.57-.31-.89-.39 0-.03.02-.06.02-.09V7.99c0-.41-.34-.75-.75-.75s-.75.34-.75.75v1.16c0 .03.01.06.02.09-.7.21-1.15.76-1.15 1.48 0 .99.65 1.34 1.77 1.61 1 .23 1.08.43 1.08.7 0 .33-.32.55-.81.55-.5 0-.93-.16-1.37-.51a.5.5 0 0 0-.32-.1c-.28 0-.51.23-.51.51 0 .17.08.32.21.42.34.25.71.42 1.11.53-.01.04-.02.07-.02.11v1.16c0 .41.34.75.75.75s.75-.34.75-.75v-1.16c0-.02-.01-.04-.01-.06.8-.18 1.3-.75 1.3-1.55">
+                        </path>
+                        <path
+                            d="M4.38 21.79c-.41 0-.75-.34-.75-.75V18.4c0-.41.34-.75.75-.75h2.65c.41 0 .75.34.75.75s-.34.75-.75.75h-1.9v1.89c0 .42-.34.75-.75.75">
+                        </path>
+                    </svg>
+                    <p class="mt-5 text-green-800 font-semibold text-sm">
+                        Save when you trade-in a similar device.
+                    </p>
+                    <br />
+                    <i class="fa-solid fa-chevron-right mt-6 mb-10 ml-7"></i>
+                </div>
+            </div>
+
+            <!-- colorfull electronics counting -->
+            <div class="mt-8">
+                <label id="color-label" class="text-sm" for="color">Color:</label>
+                <div class="flex flex-row gap-3 mt-3">
+                    <img data-color="Midnight Black"
+                        class="color-label w-20 h-16 border border-gray-400 p-2 rounded-xl hover:border-black hover:border-2"
+                        src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464307_sd.jpg;maxHeight=108;maxWidth=150;format=webp"
+                        alt="" />
+                    <img data-color="Cobalt-blue"
+                        class="color-label w-20 h-16 border border-gray-400 p-2 rounded-xl hover:border-black hover:border-2"
+                        src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/b3b944bf-3897-4cd3-9a80-36a617fe4d12.jpg;maxHeight=108;maxWidth=150;format=webp"
+                        alt="" />
+                    <img data-color="Cosmic-Red"
+                        class="color-label w-20 h-16 border border-gray-400 p-2 rounded-xl hover:border-black hover:border-2"
+                        src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464309_sd.jpg;maxHeight=108;maxWidth=150;format=webp"
+                        alt="" />
+                    <img data-color="Volcanic Red"
+                        class="color-label w-20 h-16 border border-gray-400 p-2 rounded-xl hover:border-black hover:border-2"
+                        src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/8c24eac4-88c0-44de-9447-141fa0daef20.jpg;maxHeight=108;maxWidth=150;format=webp"
+                        alt="" />
+                    <img data-color="sterling-Silver"
+                        class="color-label w-20 h-16 border border-gray-400 p-2 rounded-xl hover:border-black hover:border-2"
+                        src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/60131c11-852a-4d03-8349-d9198a0ba284.jpg;maxHeight=108;maxWidth=150;format=webp"
+                        alt="" />
+
+                    <!-- <img class="border border-gray-600"src="" alt="">
+              <img src="" alt=""> -->
+                </div>
+            </div>
+
+            <!-- Key Accessories part -->
+            <div class="mt-12" id="keyAccesories">
+                <label class="text-sm" for="keyAccesories">Key Accessoreis:</label>
+
+                <!-- components div-->
+                <div id="components" class="flex flex-row gap-2">
+                    <!--component1-->
+                    <div id="component1"
+                        class="w-60 h-32 border flex justify-center items-center gap-3 border-gray-400 rounded-lg">
+                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/fddc2d66-36fc-4549-95c4-7eba9f5ef944.jpg;maxHeight=50;maxWidth=50"
+                            alt="" class="ml-4" />
+
+                        <div class="flex flex-col">
+                            <p class="text-sm">Madden NFL 25 Standard Edition...</p>
+                            <p class="font-semibold">$34.99</p>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-cart-shopping mt-2 text-blue-500"></i>
+                                <span class="text-base text-blue-500 font-semibold">Add to cart</span>
+                            </div>
+                            <!-- <i class="fa-regular fa-heart"></i> -->
+                        </div>
+
+                        <!-- heart icon -->
+                        <div class="w-16 h-11 flex justify-center items-center mt-10 mr-3">
+                            <i class="fa-regular fa-heart text-2xl"></i>
+                        </div>
+                    </div>
+                    <div id="component2"
+                        class="w-60 h-32 border flex justify-center items-center gap-3 border-gray-400 rounded-lg">
+                        <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4391/4391500_sd.jpg;maxHeight=50;maxWidth=50"
+                            alt="" class="ml-4" />
+
+                        <div class="flex flex-col">
+                            <p class="text-sm">Sony - $100 PlayStation Store Gift Card</p>
+                            <p class="font-semibold">$34.99</p>
+                            <div class="flex items-center gap-2">
+                                <i class="fa-solid fa-cart-shopping mt-2 text-blue-500"></i>
+                                <span class="text-base text-blue-500 font-semibold">Add to cart</span>
+                            </div>
+                            <!-- <i class="fa-regular fa-heart"></i> -->
+                        </div>
+
+                        <!-- heart icon -->
+                        <div class="w-16 h-11 flex justify-center items-center mt-10 mr-3">
+                            <i class="fa-regular fa-heart text-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section2" class="grid grid-cols-1 md:grid-cols-2">
+        <!-- left section -->
+        <div id="specificatons" class="ml-12">
+            <h1 class="font-bold text-xl tracking-widest">Specifiactions</h1>
+
+            <!-- specifiaction 1 -->
+            <div id="ul-speciifation">
+                <div class="w-auto h-14 bg-slate-200 border rounded-xl mt-4 flex justify-start items-center gap-36">
+                    <p class="ml-3">Wireless</p>
+                    <p>Yes</p>
+                </div>
+                <!-- specification 2 -->
+                <div class="w-auto h-14 bg-slate-50 rounded-xl mt-4 flex justify-start items-center gap-36">
+                    <p class="ml-3">Battery Size</p>
+                    <p>Battery Pack</p>
+                </div>
+                <!-- specification 3 -->
+                <div class="w-auto h-14 bg-slate-200 border rounded-xl mt-4 flex justify-start items-center gap-36">
+                    <p class="ml-3">Compatible Platform(s)</p>
+                    <p>PlayStation 5, Mac/Windows, Android, iOS</p>
+                </div>
+
+                <!-- show full specs -->
+                <div
+                    class="w-56 h-10 mt-6 border border-blue-700 rounded-md text-center flex justify-center items-center hover:bg-blue-950 hover:text-white">
+                    <p class="text-blue-700 font-semibold text-lg hover:text-slate-50">
+                        Show Full Specs
+                    </p>
+                </div>
+            </div>
+
+            <!-- Features etc -->
+            <!-- feature 1 -->
+            <div id="features-etc" class="w-auto h-14 mt-32 flex justify-between items-center">
+                <h1 class="font-bold text-lg">Features</h1>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <hr class="border border-gray-400" />
+            <!-- feature 2 -->
+            <div id="features-etc" class="w-auto h-14 flex justify-between items-center">
+                <h1 class="font-bold text-lg">Questions & Answers(172)</h1>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <hr class="border border-gray-400" />
+            <!-- feature 3 -->
+            <div id="features-etc" class="w-auto h-14 flex justify-between items-center">
+                <h1 class="font-bold text-lg">From The Manufacturer</h1>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <hr class="border border-gray-400 mb-2" />
+        </div>
+
+        <!-- rigt section -->
+        <div class="flex ml-64 mt-10 flex-col">
+            <!-- Logo (SVG) -->
+            <svg aria-hidden="true" role="img" viewBox="0 0 100 100" height="32" width="32" class="logo mb-2">
+                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M27.43 10.64v5.95c0 1.75-.8 7.84-10.99 12.74-.07.03-.14.03-.2.05l-.07.02c-.05 0-.09.03-.13.03l-.04-.01h-.04l-.12-.02-.08-.02c-.06-.02-.13-.02-.2-.05-10.2-4.9-10.99-11-10.99-12.74V7.3c0-.38.25-.73.61-.87l10.5-3.8.12-.03.2-.02a.7.7 0 0 1 .2.03l.11.01 10.5 3.81a.93.93 0 0 1-.3 1.8.91.91 0 0 1-.33-.05L16 4.49 6.43 7.96v8.63c0 1.45.7 6.5 9.57 10.89 8.86-4.4 9.57-9.43 9.57-10.9v-5.94a.93.93 0 1 1 1.86 0m-7.86 5.14A3.58 3.58 0 0 1 16 19.35a3.58 3.58 0 0 1-3.57-3.57A3.58 3.58 0 0 1 16 12.21a3.58 3.58 0 0 1 3.57 3.57m-9.1 0A5.53 5.53 0 0 0 16 21.31a5.53 5.53 0 0 0 5.52-5.53A5.53 5.53 0 0 0 16 10.26a5.53 5.53 0 0 0-5.53 5.52">
+                    </path>
+                </svg>
+            </svg>
+
+            <!-- Text Section -->
+            <div class="ml-4 flex flex-col items-start">
+                <!-- Heading -->
+                <h1 class="text-sm">Protect your gaming accessory</h1>
+
+                <!-- Stars and Reviews -->
+                <div class="flex items-center">
+                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                    <i class="fas fa-star text-yellow-400 text-xs"></i>
+                    <span class="ml-2 text-xs">(37,912 Reviews)</span>
+                </div>
+            </div>
+
+            <p>Geek Squad Protection - 96% of reviewers would recommend</p>
+            <p class="text-xs text-blue-600">
+                | What's included | Terms and conditions
+            </p>
+
+            <!-- Plan boxes -->
+            <div class="flex flex-row gap-7 mt-4">
+                <!-- box1 -->
+                <div
+                    class="w-20 h-16 border border-black rounded-xl flex justify-center items-center text-sm text-black font-semibold">
+                    <p>No Plan</p>
+                </div>
+                <!-- box -->
+                <div
+                    class="w-28 h-16 border border-gray-400 rounded-xl flex justify-center flex-col items-center text-xs text-black font-semibold">
+                    <p>2-year</p>
+                    <p>$19.99</p>
+                    <p class="text-xs font-light">About 0.8$/month</p>
+                </div>
+            </div>
+
+            <!-- Availibilty boxes -->
+
+            <!-- Availability boxes -->
+            <h1 class="mt-10 font-semibold text-sm">Availability</h1>
+            <div class="flex flex-row gap-7 mt-4">
+                <!-- Box 1 -->
+                <div
+                    class="w-28 h-40 border border-black rounded-xl flex flex-col justify-start text-sm text-black font-semibold gap-3 p-2 hover:bg-slate-200">
+                    <!-- SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" xml:space="preserve"
+                        class="w-4 h-4 text-black text-sm">
+                        <path
+                            d="M28.9 11.92h-3.78a.98.98 0 0 0 0 1.96h3.79c.14 0 .25.12.25.25V28c0 .14-.11.26-.25.26h-5.03v-4.6c0-.84-.68-1.52-1.52-1.52h-9.72c-.82 0-1.44.65-1.44 1.52v4.6H6.24a.27.27 0 0 1-.27-.27V16.47h15.7c.54 0 .98-.44.98-.98V2.84a.98.98 0 0 0-.98-.97H5.8c-.25 0-.49.1-.67.26L1.2 5.85c-.2.19-.3.45-.3.72v5.1c0 .26.1.51.3.7l2.84 2.77c0 .05-.03.09-.03.14v12.7c0 1.23 1 2.23 2.23 2.23H28.9c1.22 0 2.2-1 2.2-2.21V14.13a2.2 2.2 0 0 0-2.2-2.2zM2.86 7 6.2 3.82h14.5v10.69H6.2l-3.35-3.26V7zm19.08 21.27h-3.48V24.1h3.48v4.16zm-8.78-4.16h3.34v4.16h-3.34V24.1zM6.38 9.06a.98.98 0 0 1-1.96 0c0-.54.45-.98.98-.98.55 0 .98.44.98.98z">
+                        </path>
+                    </svg>
+                    <!-- Pickup Text -->
+                    <p>Pickup</p>
+                    <div class="mt-4">
+                        <p class="text-xs font-light">Ready</p>
+                        <span>Today</span>
+                    </div>
+                </div>
+
+                <!-- Box2 -->
+
+                <div
+                    class="w-28 h-40 border border-gray-400 rounded-xl flex flex-col justify-start p-2 text-sm text-black font-semibold gap-4 hover:bg-slate-200">
+                    <!-- SVG Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-6 h-6 text-gray-900">
+                        <path
+                            d="M30 9.43a.92.92 0 0 1-.36-.07L16 4.07 2.36 9.36a1 1 0 0 1-1.29-.57.99.99 0 0 1 .57-1.29l13.64-5.29c.46-.18.98-.18 1.45 0L30.36 7.5A1 1 0 0 1 30 9.43z">
+                        </path>
+                        <path
+                            d="M16 30a.98.98 0 0 1-.41-.09l-6.24-2.77a1 1 0 0 1-.51-1.32 1 1 0 0 1 1.32-.51l5.84 2.6 13-5.77V9.92L16.38 15.1a1 1 0 0 1-.76 0L3 9.92v12.22l2.93 1.3a1 1 0 0 1 .51 1.32 1 1 0 0 1-1.32.51L1.59 23.7a1 1 0 0 1-.59-.91V8.43a1 1 0 0 1 .44-.83c.28-.19.63-.22.94-.1L16 13.09 29.62 7.5c.31-.13.66-.09.94.09.27.19.44.5.44.84v14.36c0 .4-.23.75-.59.91l-14 6.21A.98.98 0 0 1 16 30z">
+                        </path>
+                        <path d="M16 29.53a1 1 0 0 1-1-1V14.17c0-.55.45-1 1-1s1 .45 1 1v14.36a1 1 0 0 1-1 1z"></path>
+                        <path
+                            d="M23.54 19.48a1 1 0 0 1-1-1v-6.49L8.83 6.85a1 1 0 0 1 .7-1.88l14.36 5.38a1 1 0 0 1 .65.94v7.18a1 1 0 0 1-1 1.01z">
+                        </path>
+                    </svg>
+
+                    <!-- Text Content -->
+                    <p class="text-xs font-medium">Shipping</p>
+                    <p class="text-sm font-thin text-center mt">Unavailable to 96939</p>
+                </div>
+            </div>
+
+            <!-- pick up at Aiea -->
+            <div class="flex gap-2 mt-4">
+                <p class="font-semibold text-sm">Pick up at</p>
+                <span class="text-sm text-blue-600">Aiea</span>
+            </div>
+            <!-- hurry up line -->
+            <p class="text-xs text-red-600 mt-4">
+                Act Fast – Only 1 left at your store!
+            </p>
+
+            <!-- Add to cart and save  -->
+
+            <div class="flex flex-row gap-4 mt-6">
+                <div class="w-72 h-12 bg-yellow-400 flex items-center justify-center border rounded-md gap-2">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p class="font-semibold">Add to cart</p>
+                </div>
+
+                <div
+                    class="w-28 h-12 border border-gray-400 rounded-md flex flex-row gap-2 items-center justify-center">
+                    <i class="fa-regular fa-heart"></i>
+                    <p class="font-mediumtext-lg">save</p>
+                </div>
+            </div>
+
+            <!-- more buying option -->
+            <h1 class="font-semibold text-lg mt-6">More Buying options</h1>
+            <div class="h-20 w-96 border border-gray-500 flex justify-between items-center mt-6 rounded-lg p-2">
+                <div class="flex flex-col gap-0">
+                    <p>Open Box from</p>
+                    <p class="font-bold">$60.99</p>
+                </div>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+    </section>
+    <hr class="bg-slate-200 border mt-8 mb-10 h-4" />
+    <!-- section 3 -->
+
+    <section id="section3" class="grid grid-cols-1 md:grid-cols-2 mb-3">
+        <!-- customers together buy -->
+        <div class="ml-12">
+            <h1 class="text-lg font-medium">Customers often buy these together</h1>
+
+            <!-- gaming contollers -->
+
+            <h1 class="text-lg font-semibold mt-4">Gaming contollers</h1>
+            <div id="components2" class="flex flex-row gap-2 mt-4">
+                <!--component1-->
+                <div id="component1-1"
+                    class="w-64 h-40 border flex justify-center items-center gap-3 border-gray-400 rounded-lg">
+                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6562/6562576_sd.jpg?format=webp"
+                        alt="" class="ml-4 w-14 h-10" />
+
+                    <div class="flex flex-col">
+                        <p
+                            class="text-xs text-blue-600 hover:cursor-pointer hover:underline hover:text-black font-normal">
+                            Sony - PlayStation Portal Remote Player - White
+                        </p>
+
+                        <div class="flex items-center text-xs">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <span class="text-blue-500 hover:cursor-pointer hover:underline">(3,439)</span>
+                        </div>
+
+                        <p class="font-semibold">$34.99</p>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-cart-shopping mt-2 text-blue-500"></i>
+                            <span class="text-base text-blue-500 font-semibold cursor-pointer">Add to cart</span>
+                        </div>
+                        <!-- <i class="fa-regular fa-heart"></i> -->
+                    </div>
+
+                    <!-- heart icon -->
+                    <div class="w-16 h-11 flex justify-center items-center mt-24 mr-3">
+                        <i class="fa-regular fa-heart text-2xl"></i>
+                    </div>
+                </div>
+                <div id="component2-1"
+                    class="w-64 h-40 border flex justify-center items-center gap-3 border-gray-400 rounded-lg">
+                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/1cda615b-4abd-4423-a5e9-5d3c0695b921.jpg?format=webp"
+                        alt="" class="ml-4 w-14 h-10" />
+
+                    <div class="flex flex-col">
+                        <p
+                            class="text-xs font-normal text-blue-600 hover:cursor-pointer hover:underline hover:text-black">
+                            Sony Interactive Entertainment - DualSense Wireless...
+                        </p>
+                        <div class="flex items-center text-xs">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <span class="text-blue-500 hover:cursor-pointer hover:underline">(81)</span>
+                        </div>
+                        <p class="font-semibold">$34.99</p>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-cart-shopping mt-2 text-blue-500"></i>
+                            <span class="text-base text-blue-500 font-semibold cursor-pointer">Add to cart</span>
+                        </div>
+                        <!-- <i class="fa-regular fa-heart"></i> -->
+                    </div>
+
+                    <!-- heart icon -->
+                    <div class="w-16 h-11 flex justify-center items-center mt-24 mr-3">
+                        <i class="fa-regular fa-heart text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- video Games heading -->
+    <section id="section3">
+        <div class="ml-12">
+            <h1 class="text-lg font-semibold mt-4">Video Games</h1>
+        </div>
+
+        <!-- Product Slider -->
+        <div id="product-slider" class="splide ml-12 mt-4">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <!-- Slide 1 -->
+                    <li class="splide__slide">
+                        <div class="flex gap-3">
+                            <div class="product">
+                                <div
+                                    class="w-64 h-40 border flex justify-center items-center gap-3 border-gray-400 rounded-lg">
+                                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/399c1fc2-32a2-4b81-a470-a844bb56556b.jpg?format=webp"
+                                        alt="" class="ml-4 w-14 h-10" />
+
+                                    <div class="flex flex-col">
+                                        <p
+                                            class="text-xs text-blue-600 hover:cursor-pointer hover:underline hover:text-black font-normal">
+                                            College Football 25 Standard Edition - PlayStation 5
+                                        </p>
+
+                                        <div class="flex items-center text-xs">
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <span
+                                                class="text-blue-500 hover:cursor-pointer hover:underline">(3,439)</span>
+                                        </div>
+
+                                        <p class="font-semibold">$34.99</p>
+                                        <div class="flex items-center gap-2">
+                                            <i class="fa-solid fa-cart-shopping mt-2 text-blue-500"></i>
+                                            <span class="text-base text-blue-500 font-semibold cursor-pointer">Add to
+                                                cart</span>
+                                        </div>
+                                    </div>
+                                    <!-- heart icon -->
+                                    <div class="w-16 h-11 flex justify-center items-center mt-24 mr-3">
+                                        <i class="fa-regular fa-heart text-2xl"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product2 -->
+                            <div class="product">
+                                <div
+                                    class="w-64 h-40 border flex justify-center items-center gap-3 border-gray-400 rounded-lg">
+                                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/fddc2d66-36fc-4549-95c4-7eba9f5ef944.jpg?format=webp"
+                                        alt="" class="ml-4 w-14 h-10" />
+
+                                    <div class="flex flex-col">
+                                        <p
+                                            class="text-xs text-blue-600 hover:cursor-pointer hover:underline hover:text-black font-normal">
+                                            Madden NFL 25 Standard Edition - PlayStation 5
+                                        </p>
+
+                                        <div class="flex items-center text-xs">
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <span
+                                                class="text-blue-500 hover:cursor-pointer hover:underline">(439)</span>
+                                        </div>
+
+                                        <p class="font-semibold">$45.99</p>
+                                        <div class="flex items-center gap-2">
+                                            <i class="fa-solid fa-cart-shopping mt-2 text-blue-500"></i>
+                                            <span class="text-base text-blue-500 font-semibold cursor-pointer">Add to
+                                                cart</span>
+                                        </div>
+                                    </div>
+                                    <!-- heart icon -->
+                                    <div class="w-16 h-11 flex justify-center items-center mt-24 mr-3">
+                                        <i class="fa-regular fa-heart text-2xl"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product3 -->
+                            <div class="product">
+                                <div
+                                    class="w-64 h-40 border flex justify-center items-center gap-3 border-gray-400 rounded-lg">
+                                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5102ee23-5973-47b7-82eb-ffb0408b55ec.jpg?format=webp"
+                                        alt="" class="ml-4 w-14 h-10" />
+
+                                    <div class="flex flex-col">
+                                        <p
+                                            class="text-xs text-blue-600 hover:cursor-pointer hover:underline hover:text-black font-normal">
+                                            EA SPORTS FC 25 Standard Edition - PlayStation 5
+                                        </p>
+
+                                        <div class="flex items-center text-xs">
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <span
+                                                class="text-blue-500 hover:cursor-pointer hover:underline">(111)</span>
+                                        </div>
+
+                                        <p class="font-semibold">$4.99</p>
+                                        <div class="flex items-center gap-2">
+                                            <i class="fa-solid fa-cart-shopping mt-2 text-blue-500"></i>
+                                            <span class="text-base text-blue-500 font-semibold cursor-pointer">Add to
+                                                cart</span>
+                                        </div>
+                                    </div>
+                                    <!-- heart icon -->
+                                    <div class="w-16 h-11 flex justify-center items-center mt-24 mr-3">
+                                        <i class="fa-regular fa-heart text-2xl"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product4 -->
+                            <div class="product">
+                                <div
+                                    class="w-64 h-40 border flex justify-center items-center gap-3 border-gray-400 rounded-lg">
+                                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/f220ef0d-6e71-42eb-beec-b783ce7bf361.png?format=webp"
+                                        alt="" class="ml-4 w-14 h-10" />
+
+                                    <div class="flex flex-col">
+                                        <p
+                                            class="text-xs text-blue-600 hover:cursor-pointer hover:underline hover:text-black font-normal">
+                                            Call of Duty: Black Ops 6 Standard Edition - PlayStation
+                                            5
+                                        </p>
+
+                                        <div class="flex items-center text-xs">
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <span
+                                                class="text-blue-500 hover:cursor-pointer hover:underline">(439)</span>
+                                        </div>
+
+                                        <p class="font-semibold">$64.99</p>
+                                        <div class="flex items-center gap-2">
+                                            <i class="fa-solid fa-cart-shopping mt-2 text-blue-500"></i>
+                                            <span class="text-base text-blue-500 font-semibold cursor-pointer">Add to
+                                                cart</span>
+                                        </div>
+                                    </div>
+                                    <!-- heart icon -->
+                                    <div class="w-16 h-11 flex justify-center items-center mt-24 mr-3">
+                                        <i class="fa-regular fa-heart text-2xl"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- product5 -->
+                            <div class="product">
+                                <div
+                                    class="w-64 h-40 border flex justify-center items-center gap-3 border-gray-400 rounded-lg">
+                                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6589/6589464_sd.png?format=webp"
+                                        alt="" class="ml-4 w-14 h-10" />
+
+                                    <div class="flex flex-col">
+                                        <p
+                                            class="text-xs text-blue-600 hover:cursor-pointer hover:underline hover:text-black font-normal">
+                                            NBA 2K25 Standard Edition - PlayStation 5
+                                        </p>
+
+                                        <div class="flex items-center text-xs">
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <span
+                                                class="text-blue-500 hover:cursor-pointer hover:underline">(139)</span>
+                                        </div>
+
+                                        <p class="font-semibold">$40.99</p>
+                                        <div class="flex items-center gap-2">
+                                            <i class="fa-solid fa-cart-shopping mt-2 text-blue-500"></i>
+                                            <span class="text-base text-blue-500 font-semibold cursor-pointer">Add to
+                                                cart</span>
+                                        </div>
+                                    </div>
+                                    <!-- heart icon -->
+                                    <div class="w-16 h-11 flex justify-center items-center mt-24 mr-3">
+                                        <i class="fa-regular fa-heart text-2xl"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Slide 2 -->
+                    <li class="splide__slide">
+                        <div class="flex gap-3">
+                            <!-- product1 -->
+                            <div class="product">
+                                <div
+                                    class="w-64 h-40 border flex justify-center items-center gap-3 border-gray-400 rounded-lg">
+                                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6566/6566050_sd.jpg?format=webp"
+                                        alt="" class="ml-4 w-14 h-10" />
+
+                                    <div class="flex flex-col">
+                                        <p
+                                            class="text-xs text-blue-600 hover:cursor-pointer hover:underline hover:text-black font-normal">
+                                            Sony - PlayStation Portal Remote Player - White
+                                        </p>
+
+                                        <div class="flex items-center text-xs">
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <span
+                                                class="text-blue-500 hover:cursor-pointer hover:underline">(3,439)</span>
+                                        </div>
+
+                                        <p class="font-semibold">$34.99</p>
+                                        <div class="flex items-center gap-2">
+                                            <i class="fa-solid fa-cart-shopping mt-2 text-blue-500"></i>
+                                            <span class="text-base text-blue-500 font-semibold cursor-pointer">Add to
+                                                cart</span>
+                                        </div>
+                                    </div>
+                                    <!-- heart icon -->
+                                    <div class="w-16 h-11 flex justify-center items-center mt-24 mr-3">
+                                        <i class="fa-regular fa-heart text-2xl"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product2 -->
+                            <div class="product">
+                                <div
+                                    class="w-64 h-40 border flex justify-center items-center gap-3 border-gray-400 rounded-lg">
+                                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6589/6589464_sd.png?format=webp"
+                                        alt="" class="ml-4 w-14 h-10" />
+
+                                    <div class="flex flex-col">
+                                        <p
+                                            class="text-xs text-blue-600 hover:cursor-pointer hover:underline hover:text-black font-normal">
+                                            NBA 2K25 Standard Edition - PlayStation 5
+                                        </p>
+
+                                        <div class="flex items-center text-xs">
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <span
+                                                class="text-blue-500 hover:cursor-pointer hover:underline">(3,439)</span>
+                                        </div>
+
+                                        <p class="font-semibold">$34.99</p>
+                                        <div class="flex items-center gap-2">
+                                            <i class="fa-solid fa-cart-shopping mt-2 text-blue-500"></i>
+                                            <span class="text-base text-blue-500 font-semibold cursor-pointer">Add to
+                                                cart</span>
+                                        </div>
+                                    </div>
+                                    <!-- heart icon -->
+                                    <div class="w-16 h-11 flex justify-center items-center mt-24 mr-3">
+                                        <i class="fa-regular fa-heart text-2xl"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product3 -->
+                            <div class="product">
+                                <div
+                                    class="w-64 h-40 border flex justify-center items-center gap-3 border-gray-400 rounded-lg">
+                                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6566/6566050_sd.jpg?format=webp"
+                                        alt="" class="ml-4 w-14 h-10" />
+
+                                    <div class="flex flex-col">
+                                        <p
+                                            class="text-xs text-blue-600 hover:cursor-pointer hover:underline hover:text-black font-normal">
+                                            Marvel's Spider-Man 2 Standard Edition - PlayStation 5
+                                        </p>
+
+                                        <div class="flex items-center text-xs">
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <span
+                                                class="text-blue-500 hover:cursor-pointer hover:underline">(139)</span>
+                                        </div>
+
+                                        <p class="font-semibold">$4.99</p>
+                                        <div class="flex items-center gap-2">
+                                            <i class="fa-solid fa-cart-shopping mt-2 text-blue-500"></i>
+                                            <span class="text-base text-blue-500 font-semibold cursor-pointer">Add to
+                                                cart</span>
+                                        </div>
+                                    </div>
+                                    <!-- heart icon -->
+                                    <div class="w-16 h-11 flex justify-center items-center mt-24 mr-3">
+                                        <i class="fa-regular fa-heart text-2xl"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product4 -->
+                            <div class="product">
+                                <div
+                                    class="w-64 h-40 border flex justify-center items-center gap-3 border-gray-400 rounded-lg">
+                                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6501/6501071_sd.jpg?format=webp"
+                                        alt="" class="ml-4 w-14 h-10" />
+
+                                    <div class="flex flex-col">
+                                        <p
+                                            class="text-xs text-blue-600 hover:cursor-pointer hover:underline hover:text-black font-normal">
+                                            Gran Turismo 7 - PlayStation 5
+                                        </p>
+
+                                        <div class="flex items-center text-xs">
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <i class="fas fa-star text-yellow-400"></i>
+                                            <span
+                                                class="text-blue-500 hover:cursor-pointer hover:underline">(181)</span>
+                                        </div>
+
+                                        <p class="font-semibold">$34.99</p>
+                                        <div class="flex items-center gap-2">
+                                            <i class="fa-solid fa-cart-shopping mt-2 text-blue-500"></i>
+                                            <span class="text-base text-blue-500 font-semibold cursor-pointer">Add to
+                                                cart</span>
+                                        </div>
+                                    </div>
+                                    <!-- heart icon -->
+                                    <div class="w-16 h-11 flex justify-center items-center mt-24 mr-3">
+                                        <i class="fa-regular fa-heart text-2xl"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- product5 -->
+                        </div>
+                    </li>
+
+                    <!-- Add more slides as needed -->
+                </ul>
+            </div>
+            <!-- Arrows for navigation -->
+            <div class="splide__arrows absolute top-1/2 left-0 right-0 transform -translate-y-1/2 z-10">
+                <button
+                    class="splide__arrow splide__arrow--prev bg-gray-800 text-white rounded-full p-2 shadow-lg hover:bg-gray-600"
+                    aria-label="Previous">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button
+                    class="splide__arrow splide__arrow--next bg-gray-800 text-white rounded-full p-2 shadow-lg hover:bg-gray-600"
+                    aria-label="Next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- more recommended items  section -->
+    <section id="section4">
+        <h1 class="ml-12 font-medium text-lg mt-3">More recommended items</h1>
+        <div class="ml-12 mt-3 flex flex-row gap-3">
+            <!-- item1 -->
+            <div
+                class="w-auto h-auto border border-gray-300 rounded-md flex flex-col justify-center align-middle items-center">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6472/6472017_rd.jpg?format=webp"
+                    alt="" class="w-10 h-8 mt-4" />
+                <p class="p-3">Gaming Controlling Accessories</p>
+            </div>
+
+            <!-- item2 -->
+            <div
+                class="w-auto h-auto border border-gray-300 rounded-md flex flex-col justify-center align-middle items-center">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6567/6567072_sd.jpg?format=webp"
+                    alt="" class="w-10 h-8 mt-4" />
+                <p class="p-3">Gaming Headsets</p>
+            </div>
+
+            <!-- item3 -->
+            <div
+                class="w-auto h-auto border border-gray-300 rounded-md flex flex-col justify-center align-middle items-center">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6430/6430165_sd.jpg?format=webp"
+                    alt="" class="w-10 h-8 mt-4" />
+                <p class="p-3">Power Adapter & Chargers</p>
+            </div>
+
+            <!-- item4 -->
+            <div
+                class="w-auto h-auto border border-gray-300 rounded-md flex flex-col justify-center align-middle items-center">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/9540/9540009_rd.jpg?format=webp"
+                    alt="" class="w-10 h-8 mt-4" />
+                <p class="p-3">Pc Gaming Headsets</p>
+            </div>
+            <!-- item5 -->
+            <div
+                class="w-auto h-auto border border-gray-300 rounded-md flex flex-col justify-center align-middle items-center">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/8945/8945779_sd.jpg?format=webp"
+                    alt="" class="w-10 h-8 mt-4" />
+                <p class="p-3">Video Game cards</p>
+            </div>
+            <!-- item6 -->
+            <div
+                class="w-auto h-auto border border-gray-300 rounded-md flex flex-col justify-center align-middle items-center">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/67bd2941-994e-4282-ac71-d21860a9e101.jpg?format=webp"
+                    alt="" class="w-10 h-8 mt-4" />
+                <p class="p-3">Virtual Reality Device</p>
+            </div>
+            <!-- item7 -->
+            <div
+                class="w-auto h-auto border border-gray-300 rounded-md flex flex-col justify-center align-middle items-center">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6565/6565693_sd.jpg?format=webp"
+                    alt="" class="w-10 h-8 mt-4" />
+                <p class="p-3">Video Game Console Stands</p>
+            </div>
+            <!-- chevron icon -->
+            <!-- <div class="flex justify-center align-middle items-center">
+             <i class="fas fa-chevron-right  bg-gray-800 text-white rounded-full p-2 shadow-lg hover:bg-gray-600"></i>
+         </div> -->
+        </div>
+    </section>
+    <hr class="bg-slate-200 border mt-8 mb-10 h-4 m-12" />
+
+    <!-- section 5 -->
+
+    <section id="section5" class="ml-12 mt-32">
+        <h1 class="text-lg font-semibold mt-4">Compare Similar Products</h1>
+        <!-- image section -->
+        <div id="compare-image-container" class="grid grid-cols-4 gap-3">
+            <!-- compare-image 1 -->
+            <div class="flex flex-col justify-start w-auto h-auto p-2 mt-3">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6464/6464307_sd.jpg;maxHeight=300;maxWidth=300;format=webp"
+                    alt="compare-image-1" class="w-48 ml-16" />
+
+                <p class="text-sm font-semibold">This Product</p>
+                <p class="text-sm font-semibold">
+                    Sony - PlayStation 5 - DualSense Wireless Controller - Midnight
+                    Black
+                </p>
+                <div class="flex items-center text-xs mt-5">
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <span class="text-blue-500 hover:cursor-pointer hover:underline">(37,944)</span>
+                </div>
+                <p class="text-sm font-semibold">$74.99</p>
+            </div>
+            <!-- compare image 2 -->
+
+            <div class="flex flex-col justify-start w-auto h-auto p-2 mt-3">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/392ad00c-3b3b-4239-b517-ee44db4e779d.jpg;maxHeight=300;maxWidth=300;format=webp"
+                    alt="compare-image-1" class="w-48 ml-16" />
+
+                <p
+                    class="text-sm font-semibold text-blue-700 hover:underline hover:cursor-pointer hover:text-black mt-7">
+                    Sony Interactive Entertainment - DualSense Wireless Controller
+                    Chroma Pearl - Chroma Pearl
+                </p>
+                <div class="flex items-center text-xs mt-5">
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <span class="text-blue-500 hover:cursor-pointer hover:underline">(181)</span>
+                </div>
+                <p class="text-sm font-semibold">$90.99</p>
+            </div>
+
+            <!-- compare image 3 -->
+            <div class="flex flex-col justify-start w-auto h-auto p-2 mt-3">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6532/6532912_sd.jpg;maxHeight=300;maxWidth=300;format=webp"
+                    alt="compare-image-1" class="w-48 ml-16" />
+
+                <p
+                    class="text-sm font-semibold text-blue-700 hover:underline hover:cursor-pointer hover:text-black mt-9">
+                    Sony - DualSense Edge Wireless Controller - Black , White
+                </p>
+                <div class="flex items-center text-xs mt-5">
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <span class="text-blue-500 hover:cursor-pointer hover:underline">(38,944)</span>
+                </div>
+                <p class="text-sm font-semibold">$199.99</p>
+            </div>
+            <!-- compare image 4 -->
+            <div class="flex flex-col justify-start w-auto h-auto p-2 mt-3">
+                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6562/6562576_sd.jpg;maxHeight=300;maxWidth=300;format=webp"
+                    alt="compare-image-1" class="w-48 ml-16" />
+
+                <p
+                    class="text-sm font-semibold text-blue-700 hover:underline hover:cursor-pointer hover:text-black mt-14">
+                    Sony - PlayStation Portal Remote Player - White
+                </p>
+                <div class="flex items-center text-xs mt-5">
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <i class="fas fa-star text-yellow-400"></i>
+                    <span class="text-blue-500 hover:cursor-pointer hover:underline">(39,944)</span>
+                </div>
+                <p class="text-sm font-semibold">$199.99</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- specification part 2 -->
+
+    <div id="ul-specification" class="m-12">
+        <!-- Specification Part 2 -->
+        <h1 class="font-semibold text-xl">Wireless</h1>
+        <div class="w-auto h-14 bg-slate-200 border rounded-xl mt-4 grid grid-cols-4 items-center px-4">
+            <p>Yes</p>
+            <p>..</p>
+            <p>Yes</p>
+            <p>Yes</p>
+        </div>
+
+        <!-- Specification 2 -->
+        <h1 class="mt-8 text-xl font-semibold">Battery Size</h1>
+        <div class="w-auto h-14 bg-slate-50 rounded-xl mt-4 grid grid-cols-4 items-center px-4">
+            <p>Battery Pack</p>
+            <p>..</p>
+            <p>Battery Pack</p>
+            <p>Other</p>
+        </div>
+
+        <!-- Specification 3 -->
+        <h1 class="mt-8 text-lg font-semibold">Compatible Platform(s)</h1>
+        <div class="w-auto h-14 bg-slate-200 border rounded-xl mt-4 grid grid-cols-4 items-center px-4">
+            <p>PlayStation 5, Mac/Windows, Android, iOS</p>
+            <p>PlayStation 5, Mac/Windows, Android, iOS</p>
+            <p>PlayStation 5, Mac/Windows</p>
+            <p>PlayStation 5</p>
+        </div>
+
+        <!-- Show Full Specs -->
+        <div
+            class="w-72 h-10 mt-6 mx-auto border border-blue-700 rounded-md flex justify-center items-center hover:bg-blue-950 transition duration-300">
+            <p class="text-blue-700 font-semibold text-sm hover:text-slate-50 transition duration-300">
+                Compare Further
+            </p>
+        </div>
+
+    </div>
+
+    <!-- section 6 -->
+
+
+
+
+    <section class="ml-12">
+        <h1 class="text-lg font-semibold">Level Up Your Game</h1>
+        <div id="level-up-slider" class="splide mt-4">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <!-- Slide 1: First 5 Images -->
+                    <li class="splide__slide grid grid-cols-5 gap-2">
+                        <!-- Image 1 -->
+                        <div class="flex flex-col gap-1 w-auto h-auto p-4 border border-gray-300 rounded-lg">
+                            <div class="flex justify-center align-middle items-center">
+                                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/189bca32-7a30-401d-95e2-89603486986d.jpg;maxHeight=144;maxWidth=200"
+                                    alt="" class="w-36 h-32">
+                            </div>
+                            <p class="text-sm font-medium hover:underline">Nacon - Revolution 5 Pro Wireless Controller
+                                for PS5, PS4 and PC</p>
+                            <div class="flex items-center text-xs mt-0">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="text-blue-500 hover:cursor-pointer hover:underline">(159)</span>
+                            </div>
+                            <p class="text-lg font-semibold">$165.99</p>
+                            <div class="flex items-center gap-2 mt-4">
+                                <i class="fa-solid fa-cart-shopping mt-2 text-blue-900 text-sm"></i>
+                                <span class="text-sm text-blue-900 font-bold cursor-pointer">Add to cart</span>
+                            </div>
+                        </div>
+                        <!-- Image 2 -->
+                        <div class="flex flex-col gap-1 w-auto h-auto p-4 border border-gray-300 rounded-lg">
+                            <div class="flex justify-center align-middle items-center">
+                                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6532/6532912_sd.jpg;maxHeight=144;maxWidth=200"
+                                    alt="" class="w-36 h-28">
+                            </div>
+                            <p class="text-sm font-medium hover:underline mt-4">Sony - DualSense Edge Wireless
+                                Controller - Black , White</p>
+                            <div class="flex items-center text-xs mt-0">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="text-blue-500 hover:cursor-pointer hover:underline">(159)</span>
+                            </div>
+                            <p class="text-lg font-semibold">$199.99</p>
+                            <div class="flex items-center gap-2 mt-6">
+                                <i class="fa-solid fa-cart-shopping text-blue-900 text-sm"></i>
+                                <span class="text-sm text-blue-900 font-bold cursor-pointer">Add to cart</span>
+                            </div>
+                        </div>
+                        <!-- Image 3 -->
+                        <div class="flex flex-col gap-1 w-auto h-auto p-4 border border-gray-300 rounded-lg">
+                            <div class="flex justify-center align-middle items-center">
+                                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/47e3abe4-3b8b-400b-9d8b-65be6ffba685.jpg;maxHeight=144;maxWidth=200"
+                                    alt="" class="w-36 h-28">
+                            </div>
+                            <p class="text-sm font-medium hover:underline mt-3">Razer - Wolverine V3 Pro Wireless Gaming
+                                Controller with 6</p>
+                            <div class="flex items-center text-xs mt-0">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="text-blue-500 hover:cursor-pointer hover:underline">(125)</span>
+                            </div>
+                            <p class="text-lg font-semibold">$199.99</p>
+                            <div class="flex items-center gap-2 mt-6">
+                                <i class="fa-solid fa-cart-shopping text-blue-900 text-sm"></i>
+                                <span class="text-sm text-blue-900 font-bold cursor-pointer">Add to cart</span>
+                            </div>
+                        </div>
+                        <!-- Image 4 -->
+                        <div class="flex flex-col gap-1 w-auto h-auto p-4 border border-gray-300 rounded-lg">
+                            <div class="flex justify-center align-middle items-center">
+                                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/e34c75cd-25db-4f31-b41b-85d12025fcf8.png;maxHeight=144;maxWidth=200"
+                                    alt="" class="w-36 h-28">
+                            </div>
+                            <p class="text-sm font-medium hover:underline mt-3">Turtle Beach - VelocityOne Race Wheel &
+                                Pedal System for Xbox</p>
+                            <div class="flex items-center text-xs mt-0">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="text-blue-500 hover:cursor-pointer hover:underline">(25)</span>
+                            </div>
+                            <p class="text-lg font-semibold">$999.99</p>
+                            <div class="flex items-center gap-2 mt-6">
+                                <i class="fa-solid fa-cart-shopping text-blue-900 text-sm"></i>
+                                <span class="text-sm text-blue-900 font-bold cursor-pointer">Add to cart</span>
+                            </div>
+                        </div>
+                        <!-- Image 5 -->
+                        <div class="flex flex-col gap-1 w-64 h-auto p-4 border border-gray-300 rounded-lg">
+                            <div class="flex justify-center align-middle items-center">
+                                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/b0204751-6d1c-4c05-a344-117a5a3d41fd.jpg;maxHeight=144;maxWidth=200"
+                                    alt="" class="w-36 h-28">
+                            </div>
+                            <p class="text-sm font-medium hover:underline mt-3">Razer - Kitsune All-Button Optical
+                                Arcade Controller for PS5</p>
+                            <div class="flex items-center text-xs mt-0">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="text-blue-500 hover:cursor-pointer hover:underline">(25)</span>
+                            </div>
+                            <p class="text-lg font-semibold">$999.99</p>
+                            <div class="flex items-center gap-2 mt-6">
+                                <i class="fa-solid fa-cart-shopping text-blue-900 text-sm"></i>
+                                <span class="text-sm text-blue-900 font-bold cursor-pointer">Add to cart</span>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <!-- Slide 2: Next 5 Images -->
+                    <!-- Added  5 images in a similar manner -->
+
+
+                    <li class="splide__slide grid grid-cols-5 gap-2">
+                        <!-- Image 1 -->
+                        <div class="flex flex-col gap-1 w-auto h-auto p-4 border border-gray-300 rounded-lg">
+                            <div class="flex justify-center align-middle items-center">
+                                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/e34c75cd-25db-4f31-b41b-85d12025fcf8.png;maxHeight=144;maxWidth=200"
+                                    alt="" class="w-36 h-32">
+                            </div>
+                            <p class="text-sm font-medium hover:underline">Razer - Kitsune All-Button Optical Arcade
+                                Controller for PS5 and PC -</p>
+                            <div class="flex items-center text-xs mt-0">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="text-blue-500 hover:cursor-pointer hover:underline">(10)</span>
+                            </div>
+                            <p class="text-lg font-semibold">$249.99</p>
+                            <div class="flex items-center gap-2 mt-4">
+                                <i class="fa-solid fa-cart-shopping mt-2 text-blue-900 text-sm"></i>
+                                <span class="text-sm text-blue-900 font-bold cursor-pointer">Add to cart</span>
+                            </div>
+                        </div>
+                        <!-- Image 2 -->
+                        <div class="flex flex-col gap-1 w-auto h-auto p-4 border border-gray-300 rounded-lg">
+                            <div class="flex justify-center align-middle items-center">
+                                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6431/6431194_rd.jpg;maxHeight=144;maxWidth=200"
+                                    alt="" class="w-36 h-28">
+                            </div>
+                            <p class="text-sm font-medium hover:underline mt-4">HyperX - Cloud Stinger Core Wireless
+                                Gaming Headset for PC,</p>
+                            <div class="flex items-center text-xs mt-0">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="text-blue-500 hover:cursor-pointer hover:underline">(48)</span>
+                            </div>
+                            <p class="text-lg font-semibold">$59.99</p>
+                            <div class="flex items-center gap-2 mt-6">
+                                <i class="fa-solid fa-cart-shopping text-blue-900 text-sm"></i>
+                                <span class="text-sm text-blue-900 font-bold cursor-pointer">Add to cart</span>
+                            </div>
+                        </div>
+                        <!-- Image 3 -->
+                        <div class="flex flex-col gap-1 w-auto h-auto p-4 border border-gray-300 rounded-lg">
+                            <div class="flex justify-center align-middle items-center">
+                                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/b9cb3378-a1c4-4ce3-99f5-12c0e4bbb6b0.jpg;maxHeight=144;maxWidth=200"
+                                    alt="" class="w-36 h-28">
+                            </div>
+                            <p class="text-sm font-medium hover:underline mt-3">Thrustmaster - T598, Direct Axial Drive
+                                Force Feedback Racing Wheel</p>
+                            <div class="flex items-center text-xs mt-0">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="text-blue-500 hover:cursor-pointer hover:underline">(48)</span>
+                            </div>
+                            <p class="text-lg font-semibold">$499.99</p>
+                            <div class="flex items-center gap-2 mt-6">
+                                <i class="fa-solid fa-cart-shopping text-blue-900 text-sm"></i>
+                                <span class="text-sm text-blue-900 font-bold cursor-pointer">Add to cart</span>
+                            </div>
+                        </div>
+                        <!-- Image 4 -->
+                        <div class="flex flex-col gap-1 w-auto h-auto p-4 border border-gray-300 rounded-lg">
+                            <div class="flex justify-center align-middle items-center">
+                                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/660f61e0-caed-443a-a1f1-e0c54912e89e.png;maxHeight=144;maxWidth=200"
+                                    alt="" class="w-36 h-28">
+                            </div>
+                            <p class="text-sm font-medium hover:underline mt-3">Razer - Wolverine V3 Tournament Edition
+                                Wired Gaming Controller</p>
+                            <div class="flex items-center text-xs mt-0">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="text-blue-500 hover:cursor-pointer hover:underline">(99)</span>
+                            </div>
+                            <p class="text-lg font-semibold">$59.99</p>
+                            <div class="flex items-center gap-2 mt-6">
+                                <i class="fa-solid fa-cart-shopping text-blue-900 text-sm"></i>
+                                <span class="text-sm text-blue-900 font-bold cursor-pointer">Add to cart</span>
+                            </div>
+                        </div>
+                        <!-- Image 5 -->
+                        <div class="flex flex-col gap-1 w-64 h-auto p-4 border border-gray-300 rounded-lg">
+                            <div class="flex justify-center align-middle items-center">
+                                <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5730/5730704_rd.jpg;maxHeight=144;maxWidth=200?format=webp"
+                                    alt="" class="w-36 h-28">
+                            </div>
+                            <p class="text-sm font-medium hover:underline mt-3">Joy-Con (L/R) Wireless Controllers for
+                                Nintendo Switch - Neon</p>
+                            <div class="flex items-center text-xs mt-0">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <span class="text-blue-500 hover:cursor-pointer hover:underline">(14,045)</span>
+                            </div>
+                            <p class="text-lg font-semibold">$79.99</p>
+                            <div class="flex items-center gap-2 mt-6">
+                                <i class="fa-solid fa-cart-shopping text-blue-900 text-sm"></i>
+                                <span class="text-sm text-blue-900 font-bold cursor-pointer">Add to cart</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <hr class="bg-slate-200 border mt-8 mb-10 h-4 ml-12 mr-8" />
+
+    <div id="saved-message"
+        class="fixed bottom-5 left-1/2 transform -translate-x-1/2 bg-black text-white py-2 px-4 rounded hidden">
+        Added to your saved items!
+    </div>
 </body>
 <script src="script.js"></script>
+
 </html>
